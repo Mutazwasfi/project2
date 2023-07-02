@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    border: 1px solid;
+}
+
+/* Header & Navbar */
+
+.navbar {
+    background-color: #161f39;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav1, .nav2 {
+    width: 50%;
+}
+
+.nav2 {
+    display: inline-block;
+    text-decoration: none;
+    
+    color: #fff;
+    
+}
+
+.logo {
+    width: 20%;
+    height: 20%;
+}
+.navList {
+    list-style-type: none;
+}
+
+.navList li {
+    display: inline-block; 
+    
+}
+
+/* Body */
+body {
+    background-color: black;
+}
+
+/* Intro */
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    margin: 10% 10%;
+
+}
+
+.intro h1, .intro h4 {
+    color: white;
+    margin-top: 8%;
+}
+.intro2{
+    margin-left: 40%;
+}
+.p-img {
+    width: 40%; 
+    height: 150%;
+}
+
+.intro1 button {
+    border-radius: 1%;
+    border-style: none;
+    background-color: black;
+    font-size: 4vh;
+    margin: 10% 0;
+}
+
+/* Containers */
+
+.objs, .edu {
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 0.5%;
+    margin: 5% 10%;
+
+}
+
+
+/* Objectives */
+
+.objs {
+}
+
+.objs list {
+    list-style-type: none;
+}
+
+/* Education */
+
+.edu1, .edu2 {
+    padding-top: 70px;
+  
+    &>div {
+        padding: 25px 0;
+        margin: 50px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #dadada68;
+        border-radius: 5px;
+  
+        & img {
+            border-radius: 50%;
+        }
+  
+        & i {
+            color: #f44949;
+        }
+    }
+  }
+  
