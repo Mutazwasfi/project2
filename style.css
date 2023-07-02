@@ -3,13 +3,13 @@
     margin: 0;
     padding: 0;
     color: white;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 /* Header & Navbar */
 
 .navbar {
-    background-color: #161f39;
+    background-color: rgb(238,62,56);
     padding: 0 7%;
     display: flex;
     justify-content: space-between;
@@ -21,35 +21,39 @@
     z-index: 1000;
 }
 
-.nav1, .nav2 {
-    width: 50%;
+.nav1 {
+    width: 25%;
 }
 
 .nav2 {
     display: inline-block;
     text-decoration: none;
-    
     color: #fff;
-    
 }
 
 .logo {
     width: 20%;
     height: 20%;
+    margin: 5%;
 }
 .navList {
     list-style-type: none;
+    
 }
 
 .navList li {
     display: inline-block; 
+    text-decoration: none;
+    /* margin: 0.1%; */
     
 }
 
 /* Body */
 body {
-    background-color: black;
+    background-color: rgb(255,0,0);
 }
+
+/* font-family: 'Charm', cursive; */
 
 /* Intro */
 
@@ -64,26 +68,33 @@ body {
     color: white;
     margin-top: 8%;
 }
+
+.intro1 {
+    width: 40%;
+}
 .intro2{
-    margin-left: 40%;
+    margin-left: 35%;
+    margin-right: 0;
 }
 .p-img {
-    width: 40%; 
-    height: 150%;
+    width: 60%; 
+    height: 100%;
 }
 
 .intro1 button {
     border-radius: 1%;
     border-style: none;
-    background-color: black;
-    font-size: 4vh;
+    background-color: rgb(238,62,56);
+    text-decoration: none;
+    font-size: 3vh;
     margin: 10% 0;
+    padding: 3%;
 }
 
 /* Containers */
 
-.objs, .edu {
-    border: 1px solid red;
+#objs, #edu, #projs, #exp {
+    border: 1px solid rgb(238,62,56);
     border-radius: 10px;
     padding: 0.5%;
     margin: 5% 10%;
@@ -93,29 +104,33 @@ body {
 
 /* Objectives */
 
-.objs {
+#objs h2 {
+    font-family: 'Charm', cursive;
 }
-
-.objs list {
-    list-style-type: none;
+#objs li {
+    margin: 1%;
+    margin-left: 5%;
 }
 
 /* Education */
 
+
 .edu1, .edu2 {
-    padding-top: 70px;
+    padding-top: 3%;
   
     &>div {
-        padding: 25px 0;
-        margin: 50px 0;
-        display: flex;
-        justify-content: space-around;
+        padding: 5%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-evenly;
         align-items: center;
         border: 1px solid #dadada68;
         border-radius: 5px;
   
         & img {
-            border-radius: 50%;
+            width: 20%;
+            height: 10%;
         }
   
         & i {
@@ -124,3 +139,50 @@ body {
     }
   }
   
+
+  /* Projects  */
+    #projs {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 3% 5%;
+
+    }
+
+  /* Experience  */
+
+  #exp {
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        padding: 3% 10%;
+  }
+
+  #exp img {
+    width: 30%;
+  }
+
+  #exp .sql {
+    margin-top: 10%;
+  }
+
+  /* Footer */
+
+  #footer {
+    padding: 0.5%;
+    margin: 5% 10%;
+    width: 80%;
+    background-color: rgb(238,62,56);
+  }
+
+  .info {
+    margin: 3%;
+  }
+
+  .social-content i {
+    padding: 1%;
+    margin: 1%;
+  }
+
+  .info p {
+    display: inline-block;
+    padding: 1%;
+  }
