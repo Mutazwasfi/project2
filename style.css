@@ -110,14 +110,11 @@ body {
 
 h2 {
     display: inline-block;
-    margin: 0 47.5%;
+    margin: 0 42%;
+    font-size: 3vw;
 }
 
 /* Objectives */
-
-#objs {
-
-}
 
 #objs h2 {
     font-family: 'Charm', cursive;
@@ -131,11 +128,17 @@ h2 {
 /* Education */
 
 #edu {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 3%;
 }
 
 .edu1, .edu2 {
+    margin: 20%;
     padding-top: 3%;
     display: block;
   
@@ -176,7 +179,7 @@ h2 {
   #footer {
     padding: 0.5%;
     padding-left: 5%;
-    margin: 5% 10%;
+    margin: 10% 10%;
     width: 80%;
     background-color: rgb(7, 10, 82);
     display: grid;
@@ -212,7 +215,6 @@ h2 {
   
       & a {
         display: none !important;
-        color: ;
       }
   
       & .menu {
@@ -230,4 +232,8 @@ h2 {
     font-size: 2vw;
     }
 
+    .intro1 button {
+      font-size: 1.25vh;
+     
+  }
   }
