@@ -12,7 +12,7 @@ a {
 /* Header & Navbar */
 
 .navbar {
-    background-color: rgb(238,62,56);
+    background-color: rgb(7, 10, 82);
     padding: 0 7%;
     display: flex;
     justify-content: space-between;
@@ -29,34 +29,36 @@ a {
 }
 
 .nav2 {
+    width: 46%;
     display: inline-block;
     text-decoration: none;
-    color: #fff;
+    color: white;
+}
+
+.nav2 a {
+    margin: 1%;
+    font-size: 1.3vw;
 }
 
 .logo {
-    width: 20%;
-    height: 20%;
+    width: 4rem;
+    height: 2rem;
     margin: 5%;
 }
-.navList {
-    list-style-type: none;
-    
-}
 
-.navList li {
-    display: inline-block; 
+.menu {
+    display: none; 
     text-decoration: none;
-    /* margin: 0.1%; */
+    font-size: 1.3vw;
+    margin: 1%;
     
 }
 
 /* Body */
 body {
-    background-color: rgb(255,0,0);
+    background-color: black;
 }
 
-/* font-family: 'Charm', cursive; */
 
 /* Intro */
 
@@ -64,7 +66,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 10% 10%;
-
+    font-size: 1.25vw;
 }
 
 .intro h1, .intro h4 {
@@ -73,10 +75,11 @@ body {
 }
 
 .intro1 {
-    width: 40%;
+    width: 50%;
+    margin-left: 12%;
 }
 .intro2{
-    margin-left: 35%;
+    margin-left: 20%;
     margin-right: 0;
 }
 .p-img {
@@ -85,13 +88,14 @@ body {
 }
 
 .intro1 button {
-    border-radius: 1%;
+    border-radius: 5%;
     border-style: none;
-    background-color: rgb(238,62,56);
+    background-color: rgb(7,10,82);
     text-decoration: none;
     font-size: 3vh;
     margin: 10% 0;
     padding: 3%;
+    color: white;
 }
 
 /* Containers */
@@ -106,10 +110,11 @@ body {
 
 h2 {
     display: inline-block;
-    margin: 0 10%;
+    margin: 0 47.5%;
 }
 
 /* Objectives */
+
 #objs {
 
 }
@@ -118,8 +123,9 @@ h2 {
     font-family: 'Charm', cursive;
 }
 #objs li {
-    margin: 1%;
+    margin: 5%;
     margin-left: 5%;
+    list-style-type: none;
 }
 
 /* Education */
@@ -172,26 +178,56 @@ h2 {
     padding-left: 5%;
     margin: 5% 10%;
     width: 80%;
-    background-color: rgb(238,62,56);
+    background-color: rgb(7, 10, 82);
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  .info {
-    margin: 3%;
-  }
+ #footer h3 {
+    margin: 5%;
+    font-size: 2vw;
+ }
 
+.social-content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-top: 7.3%;
+    width: 100%;
+}
   .social-content i {
-    padding: 1%;
-    margin: 1%;
-  }
-
-  .info p {
-    display: inline-block;
-    padding: 1%;
+    margin: 30%;
+    font-size: 2vw;
   }
 
   #footer .logo1 {
     width: 10%;
-    margin: 10% 40%;
+    margin: 20% 60%;
+
+  }
+
+  @media only screen and (max-width: 927px) {
+    .nav2 {
+      width: 20%;
+  
+      & a {
+        display: none !important;
+        color: ;
+      }
+  
+      & .menu {
+        display: block !important;
+        background-color: rgb(7, 10, 82);
+        color: white;
+      }
+    }
+
+    .intro {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    margin: 10% 10%;
+    font-size: 2vw;
+    }
+
   }
