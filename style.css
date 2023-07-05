@@ -4,6 +4,7 @@
     padding: 0;
     color: white;
     /* border: 1px solid; */
+    /* color: #F2EAD3 */
 }
 
 a {
@@ -100,7 +101,7 @@ body {
 
 /* Containers */
 
-#edu, #projs, #skills, h2 {
+#edu, #projs, #exp, #skills, h2 {
     background-color: rgb(7, 10, 82);
     border: 1px solid white;
     border-radius: 10px;
@@ -151,6 +152,7 @@ h2 {
 
 
   /* Projects  */
+
     #projs {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -158,7 +160,10 @@ h2 {
 
     }
 
-  /* Experience  */
+  /* Experience */
+    
+
+  /* Skills  */
 
   #skills {
     display: grid;
@@ -179,7 +184,7 @@ h2 {
   #footer {
     padding: 0.5%;
     padding-left: 5%;
-    margin: 10% 10%;
+    margin: 10% 10% 0 10%;
     width: 80%;
     background-color: rgb(7, 10, 82);
     display: grid;
