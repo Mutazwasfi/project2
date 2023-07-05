@@ -76,7 +76,7 @@ body {
 }
 
 .intro1 {
-    width: 50%;
+    width: 70%;
     margin-left: 12%;
 }
 .intro2{
@@ -84,7 +84,7 @@ body {
     margin-right: 0;
 }
 .p-img {
-    width: 60%; 
+    width: 70%; 
     height: 100%;
 }
 
@@ -101,18 +101,19 @@ body {
 
 /* Containers */
 
-#edu, #projs, #exp, #skills, h2 {
+#edu, #projs, #exp, #skills {
     background-color: rgb(7, 10, 82);
     border: 1px solid white;
     border-radius: 10px;
     padding: 0.5%;
-    margin: 5% 10%;
+    margin: 1% 10% 5% 10%;
 }
 
 h2 {
     display: inline-block;
     margin: 0 42%;
-    font-size: 3vw;
+    font-size: 4vw;
+
 }
 
 /* Objectives */
@@ -136,20 +137,18 @@ h2 {
     align-items: center;
     text-align: center;
     padding: 3%;
+    font-size: 2vw;
 }
 
-.edu1, .edu2 {
-    margin: 20%;
-    padding-top: 3%;
-    display: block;
-  
+  .uoj-pic img {
+    width: 30%;
+    height: 30%;
   }
 
-  .pic img {
-    width: 7rem;
-    height: 7rem;
+  .just-pic img {
+    width: 50%;
+    height: 50%;
   }
-
 
   /* Projects  */
 
@@ -157,22 +156,57 @@ h2 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         padding: 3% 5%;
-
+        text-align: center;
+        height: 120%;
     }
 
+    #projs img {
+      width: 80%;
+      height: 80%;
+     }
+     
+     #projs p {
+      font-size: 1.5vw;
+      margin-bottom: 3%;
+    }
+  
   /* Experience */
     
+   #exp {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2%;
+   }
+
+   #exp img {
+    width: 80%;
+    height: 80%;
+   }
+
+   
+   #exp p {
+    font-size: 2vw;
+    margin-bottom: 3%;
+  }
 
   /* Skills  */
 
   #skills {
     display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr ;
-        padding: 3% 10%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 3% 5%;
+    text-align: center;
+  }
+
+  #skills p {
+    font-size: 2vw;
+    margin-bottom: 3%;
   }
 
   #skills img {
     width: 30%;
+    height: 60%;
   }
 
   #skills .sql {
@@ -192,7 +226,7 @@ h2 {
   }
 
  #footer h3 {
-    margin: 5%;
+    margin: 7%;
     font-size: 2vw;
  }
 
@@ -200,18 +234,17 @@ h2 {
     display: flex;
     justify-content: space-between;
     margin-left: 20%;
-    margin-top: 7.3%;
+    margin-top: 12%;
     width: 100%;
 }
   .social-content i {
     margin: 30%;
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   #footer .logo1 {
-    width: 10%;
-    margin: 20% 60%;
-
+    width: 35%;
+    margin: 20% 45%;
   }
 
   @media only screen and (max-width: 927px) {
@@ -226,6 +259,8 @@ h2 {
         display: block !important;
         background-color: rgb(7, 10, 82);
         color: white;
+        padding: 6%;
+        font-size: 2vw;
       }
     }
 
@@ -237,8 +272,35 @@ h2 {
     font-size: 2vw;
     }
 
-    .intro1 button {
+    .intro1 {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20%;
       font-size: 1.25vh;
-     
+      width: 65%;
+
+      & button {
+        font-size: 1.25vh;
+      }
+   }
+
+   
+  #skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 5%;
   }
+
+   
+
+   .intro2 {  
+    margin-top: 10%;
+   }
+   
+   .p-img {
+    width: 85%;
+   }
   }
