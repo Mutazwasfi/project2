@@ -52,7 +52,6 @@ a {
     text-decoration: none;
     font-size: 1.3vw;
     margin: 1%;
-    
 }
 
 /* Body */
@@ -113,7 +112,8 @@ h2 {
     display: inline-block;
     margin: 0 42%;
     font-size: 4vw;
-
+    color: #F2EAD3 !important;
+    font-family: 'Bacasime Antique', serif;
 }
 
 /* Objectives */
@@ -125,6 +125,11 @@ h2 {
     margin: 5%;
     margin-left: 5%;
     list-style-type: none;
+}
+
+#objs p {
+  color: #F2EAD3 !important;
+  font-family: 'Bacasime Antique', serif;
 }
 
 /* Education */
@@ -168,6 +173,7 @@ h2 {
      #projs p {
       font-size: 1.5vw;
       margin-bottom: 3%;
+      color: #F2EAD3 !important;
     }
   
   /* Experience */
